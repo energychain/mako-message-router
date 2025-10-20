@@ -1,6 +1,6 @@
 {
   "name": "mako-message-router",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Intelligentes Routing für EDIFACT-Nachrichten der deutschen Energiewirtschaft.",
   "main": "index.js",
   "type": "commonjs",
@@ -43,7 +43,7 @@
     "amqplib": ">=0.10",
     "edifact-json-transformer": ">=1.0.0",
     "kafkajs": ">=2.0.0",
-    "willi-mako-client": ">=1.0.0"
+    "willi-mako-client": ">=0.4.0"
   },
   "peerDependenciesMeta": {
     "willi-mako-client": {
