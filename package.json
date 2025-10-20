@@ -1,0 +1,56 @@
+{
+  "name": "mako-message-router",
+  "version": "0.1.0",
+  "description": "Intelligentes Routing für EDIFACT-Nachrichten der deutschen Energiewirtschaft.",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "mako-message-router": "bin/mako-message-router.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "examples",
+    "bin"
+  ],
+  "keywords": [
+    "edifact",
+    "energy",
+    "utilities",
+    "market-communication",
+    "routing"
+  ],
+  "license": "MIT",
+  "author": "STROMDAO GmbH <dev@stromdao.com> (https://stromhaltig.de)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/energychain/mako-message-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/energychain/mako-message-router/issues"
+  },
+  "homepage": "https://github.com/energychain/mako-message-router",
+  "scripts": {
+    "start": "node examples/basic-router.js",
+    "test": "node tests/run-tests.js",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "amqplib": ">=0.10",
+    "edifact-to-json-transformer": ">=1.0.0",
+    "kafkajs": ">=2.0.0",
+    "willi-mako-client": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "willi-mako-client": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
